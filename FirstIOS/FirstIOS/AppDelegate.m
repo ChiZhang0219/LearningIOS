@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"  /*import header file, includes the class*/
 #import "ViewController.h" //
+#import "FeedViewController.h"
+#import "FavoriteViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,27 +19,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-        // sub VCs
-    UIViewController *feedViewController = [[UIViewController alloc]init]; 
-    feedViewController.title= @"Feed";
-    feedViewController.tabBarItem.image =[UIImage imageNamed:@"3d"]; // try to add img icon
-    feedViewController.view.backgroundColor =[UIColor blueColor];
+        /*--------sub VCs--------*/
+    FeedViewController *feedViewController = [[FeedViewController alloc]init];   
+    FavoriteViewController *favoritesViewController = [[FavoriteViewController alloc]init];
+        /*-----------VC holder---------*/
+    UITabBarController *tabBarController = [[UITabBarController alloc]init]; 
+    [tabBarController setViewControllers:@[feedViewController,favoritesViewController]]; // is an NSArray 
     
-    UIViewController *favoritesViewController = [[UIViewController alloc]init];
-    favoritesViewController.title= @"Favorite";
-    favoritesViewController.tabBarItem.image =[UIImage imageNamed:@"3d"];
-    favoritesViewController.view.backgroundColor =[UIColor redColor];
-    
-    UITabBarController *tabBarController = [[UITabBarController alloc]init]; // VC holder
-    [tabBarController setViewControllers:@[feedViewController,favoritesViewController]];
-    
-    
-    /*   CANVAS */
-    // Has window @property in AppDelegate.h file
-    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]]; // call from .h file @ property 
-      
-    self.viewController = [[ViewController alloc] init];// using viewController property
-    self.window.rootViewController = tabBarController; // set the rootviewcontroller to UTBC 
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];       
+    self.window.rootViewController = tabBarController; // set the rootviewcontroller 
     [self.window makeKeyAndVisible]; // Means it would receive all keyboard and non-touch events
     
     // ITS NOT GOOD TO HAVE VIEW IN APPDELEGATE!!, encalpuslate those inside viewcontroller.

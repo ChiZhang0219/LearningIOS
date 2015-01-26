@@ -1,39 +1,37 @@
 //
-//  FeedViewController.m
+//  FavoriteViewController.m
 //  FirstIOS
 //
 //  Created by CHI ZHANG on 1/26/15.
 //  Copyright (c) 2015 CHI ZHANG. All rights reserved.
 //
 
-#import "FeedViewController.h"
+#import "FavoriteViewController.h"
 
-@interface FeedViewController ()
+@interface FavoriteViewController ()
 
 @end
 
-@implementation FeedViewController
+@implementation FavoriteViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor redColor];
 }
 
-//Initialization method
--(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{   
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        //Custom initialzation
-        self.title=@"Feed";
-        self.tabBarItem.image = [UIImage imageNamed:@"3d"]; 
+        self.title = @"Favorites";
+        self.tabBarItem.image =[UIImage imageNamed:@"3d"];
     }
-    return self; //
+    return self;
+
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

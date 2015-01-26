@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D5BBF241A764DAB000FF496 /* 3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D5BBF231A764DAB000FF496 /* 3d.png */; };
 		4D5BBF291A764FB4000FF496 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BBF281A764FB4000FF496 /* FeedViewController.m */; };
+		4D5BBF2C1A765A10000FF496 /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BBF2B1A765A10000FF496 /* FavoriteViewController.m */; };
 		4DAE296F1A25832800A0B795 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE296E1A25832800A0B795 /* main.m */; };
 		4DAE29721A25832800A0B795 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE29711A25832800A0B795 /* AppDelegate.m */; };
 		4DAE29751A25832800A0B795 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE29741A25832800A0B795 /* ViewController.m */; };
@@ -32,6 +33,8 @@
 		4D5BBF231A764DAB000FF496 /* 3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d.png; sourceTree = "<group>"; };
 		4D5BBF271A764FB4000FF496 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		4D5BBF281A764FB4000FF496 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		4D5BBF2A1A765A10000FF496 /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
+		4D5BBF2B1A765A10000FF496 /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
 		4DAE29691A25832800A0B795 /* FirstIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAE296D1A25832800A0B795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DAE296E1A25832800A0B795 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 			children = (
 				4DAE29701A25832800A0B795 /* AppDelegate.h */,
 				4DAE29711A25832800A0B795 /* AppDelegate.m */,
+				4D5BBF2A1A765A10000FF496 /* FavoriteViewController.h */,
+				4D5BBF2B1A765A10000FF496 /* FavoriteViewController.m */,
 				4D5BBF271A764FB4000FF496 /* FeedViewController.h */,
 				4D5BBF281A764FB4000FF496 /* FeedViewController.m */,
 				4DAE29731A25832800A0B795 /* ViewController.h */,
@@ -228,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5BBF2C1A765A10000FF496 /* FavoriteViewController.m in Sources */,
 				4DAE29751A25832800A0B795 /* ViewController.m in Sources */,
 				4DAE29721A25832800A0B795 /* AppDelegate.m in Sources */,
 				4D5BBF291A764FB4000FF496 /* FeedViewController.m in Sources */,
