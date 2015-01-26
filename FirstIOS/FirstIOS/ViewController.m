@@ -14,6 +14,7 @@
 
 @implementation ViewController
 
+// A viewcontroller that change the alpha value of whole app
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"Chi ZHang");

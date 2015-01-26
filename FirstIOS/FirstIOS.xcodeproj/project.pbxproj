@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5BBF241A764DAB000FF496 /* 3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D5BBF231A764DAB000FF496 /* 3d.png */; };
+		4D5BBF291A764FB4000FF496 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BBF281A764FB4000FF496 /* FeedViewController.m */; };
 		4DAE296F1A25832800A0B795 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE296E1A25832800A0B795 /* main.m */; };
 		4DAE29721A25832800A0B795 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE29711A25832800A0B795 /* AppDelegate.m */; };
 		4DAE29751A25832800A0B795 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE29741A25832800A0B795 /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D5BBF231A764DAB000FF496 /* 3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3d.png; sourceTree = "<group>"; };
+		4D5BBF271A764FB4000FF496 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		4D5BBF281A764FB4000FF496 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		4DAE29691A25832800A0B795 /* FirstIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAE296D1A25832800A0B795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DAE296E1A25832800A0B795 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +88,8 @@
 			children = (
 				4DAE29701A25832800A0B795 /* AppDelegate.h */,
 				4DAE29711A25832800A0B795 /* AppDelegate.m */,
+				4D5BBF271A764FB4000FF496 /* FeedViewController.h */,
+				4D5BBF281A764FB4000FF496 /* FeedViewController.m */,
 				4DAE29731A25832800A0B795 /* ViewController.h */,
 				4DAE29741A25832800A0B795 /* ViewController.m */,
 				4DAE29761A25832800A0B795 /* Main.storyboard */,
@@ -96,6 +103,7 @@
 		4DAE296C1A25832800A0B795 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D5BBF231A764DAB000FF496 /* 3d.png */,
 				4DAE296D1A25832800A0B795 /* Info.plist */,
 				4DAE296E1A25832800A0B795 /* main.m */,
 			);
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5BBF241A764DAB000FF496 /* 3d.png in Resources */,
 				4DAE29781A25832800A0B795 /* Main.storyboard in Resources */,
 				4DAE297D1A25832800A0B795 /* LaunchScreen.xib in Resources */,
 				4DAE297A1A25832800A0B795 /* Images.xcassets in Resources */,
@@ -221,6 +230,7 @@
 			files = (
 				4DAE29751A25832800A0B795 /* ViewController.m in Sources */,
 				4DAE29721A25832800A0B795 /* AppDelegate.m in Sources */,
+				4D5BBF291A764FB4000FF496 /* FeedViewController.m in Sources */,
 				4DAE296F1A25832800A0B795 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +424,7 @@
 				4DAE298E1A25832800A0B795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DAE298F1A25832800A0B795 /* Build configuration list for PBXNativeTarget "FirstIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +433,7 @@
 				4DAE29911A25832800A0B795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

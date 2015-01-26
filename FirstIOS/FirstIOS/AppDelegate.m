@@ -7,7 +7,6 @@
 
 #import "AppDelegate.h"  /*import header file, includes the class*/
 #import "ViewController.h" //
-
 @interface AppDelegate ()
 
 @end
@@ -18,21 +17,36 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+        // sub VCs
+    UIViewController *feedViewController = [[UIViewController alloc]init]; 
+    feedViewController.title= @"Feed";
+    feedViewController.tabBarItem.image =[UIImage imageNamed:@"3d"]; // try to add img icon
+    feedViewController.view.backgroundColor =[UIColor blueColor];
+    
+    UIViewController *favoritesViewController = [[UIViewController alloc]init];
+    favoritesViewController.title= @"Favorite";
+    favoritesViewController.tabBarItem.image =[UIImage imageNamed:@"3d"];
+    favoritesViewController.view.backgroundColor =[UIColor redColor];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc]init]; // VC holder
+    [tabBarController setViewControllers:@[feedViewController,favoritesViewController]];
+    
+    
     /*   CANVAS */
-    CGRect viewRect = [[UIScreen mainScreen] bounds]; // Has window @property in AppDelegate.h file
-    self.window = [[UIWindow alloc]initWithFrame:viewRect]; // call from .h file @ property 
+    // Has window @property in AppDelegate.h file
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]]; // call from .h file @ property 
       
     self.viewController = [[ViewController alloc] init];// using viewController property
-    self.window.rootViewController = self.viewController; // set the viewController,RVC get to display on screen
+    self.window.rootViewController = tabBarController; // set the rootviewcontroller to UTBC 
     [self.window makeKeyAndVisible]; // Means it would receive all keyboard and non-touch events
     
-    UIView *colorView = [[UIView alloc] initWithFrame:viewRect];  // Create the size of whole screen
     // ITS NOT GOOD TO HAVE VIEW IN APPDELEGATE!!, encalpuslate those inside viewcontroller.
     
-    NSLog(@"Screen is %f tall and %f wide",viewRect.size.height,viewRect.size.width); 
-    // CGRect.size and @"" pay attention  log out 
-    return YES;
+      return YES;
 }
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
